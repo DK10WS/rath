@@ -1,6 +1,6 @@
 # Background changer using Detctron2
 
-## oringinal image:
+## original image:
 
 ![image](src/image.jpg)
 
