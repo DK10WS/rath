@@ -1,4 +1,4 @@
-FROM ghcr.io/astral-sh/uv:python3.13-bookworm
+FROM ghcr.io/astral-sh/uv:python3.9-bookworm
 
 WORKDIR /backend
 
@@ -6,9 +6,9 @@ COPY src .
 
 COPY requirement.txt .
 
-WORKDIR /backend/src/detectron2
-
 RUN pip install torch
+
+WORKDIR /backend/detectron2
 
 RUN pip install -e .
 
